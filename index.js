@@ -27,6 +27,8 @@ function validate(field, regex) {
     } else {
         field.classList.add('invalid')
         field.classList.remove('valid')
+        field.previousSibling.previousSibling.style.color = "red"
+        field.previousSibling.previousSibling.innerHTML = "please enter your name"
     }
 }
 
